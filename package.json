@@ -12,8 +12,6 @@
   },
   "dependencies": {
     "discord.js": "^12.5.1",
-    "file-system": "^2.2.2",
-    "pg": "^8.5.1",
-    "request": "2.81.0"
+    "file-system": "^2.2.2"
   }
 }
