@@ -2,6 +2,22 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
+const { Bdd } = require('pg');
+const bdd = new Bdd({
+	connectionString: process.env.DATABASE_URL,
+	ssl: {
+		rejectUnauthorized: false
+	}
+});
+
+bdd.connect();
+
+
+
+
+
+
+
 bot.on('ready', () => {
     console.log('I am ready!');
 
